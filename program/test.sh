@@ -121,10 +121,10 @@ echo "
 #     (
 #         game_record: Game,
 #         opponent_answer: field,
-#         piece_stake_challenger: puzzle_pieces_v008.leo/PieceStake.record,
-#         piece_claim_challenger: puzzle_pieces_v008.leo/PieceClaim.record,
-#         piece_stake_opponent: puzzle_pieces_v008.leo/PieceStake.record,
-#         piece_claim_opponent: puzzle_pieces_v008.leo/PieceClaim.record,
+#         piece_stake_challenger: puzzle_pieces_v2023.leo/PieceStake.record,
+#         piece_claim_challenger: puzzle_pieces_v2023.leo/PieceClaim.record,
+#         piece_stake_opponent: puzzle_pieces_v2023.leo/PieceStake.record,
+#         piece_claim_opponent: puzzle_pieces_v2023.leo/PieceClaim.record,
 #         block_ht: u32,
 #     )
 
@@ -211,9 +211,9 @@ echo "
 # transition reveal_answer_game
 #     (
 #         reveal_answer_notification_record: RevealAnswerNotification,
-#         answer_record: multiparty_pvp_utils_v008.leo/Answer.record,
-#         joint_piece_state: puzzle_pieces_v008.leo/JointPieceState.record,
-#         claim_signature: puzzle_pieces_v008.leo/ClaimSignature.record,
+#         answer_record: multiparty_pvp_utils_v2023.leo/Answer.record,
+#         joint_piece_state: puzzle_pieces_v2023.leo/JointPieceState.record,
+#         claim_signature: puzzle_pieces_v2023.leo/ClaimSignature.record,
 #         // sig: signature // using claimSignature record from beginning for this
 #     )
 
@@ -297,9 +297,9 @@ echo "
 # transition finish_game
 #     (
 #         game_record: Game,
-#         joint_piece_winner: puzzle_pieces_v008.leo/JointPieceWinner.record,
-#         piece_joint_stake: puzzle_pieces_v008.leo/PieceJointStake.record,
-#         joint_piece_time_claim: puzzle_pieces_v008.leo/JointPieceTimeClaim.record,
+#         joint_piece_winner: puzzle_pieces_v2023.leo/JointPieceWinner.record,
+#         piece_joint_stake: puzzle_pieces_v2023.leo/PieceJointStake.record,
+#         joint_piece_time_claim: puzzle_pieces_v2023.leo/JointPieceTimeClaim.record,
 #     )
 
 leo run finish_game "{
